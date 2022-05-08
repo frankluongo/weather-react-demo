@@ -1,61 +1,46 @@
+html,
 body {
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  width: 100%;
 }
 
-h1 {
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 48px;
-  color: #ffffff;
-  padding-right: 30px;
-  padding-top: 20px;
-  font-weight: 900;
-  margin-bottom: 18px;
-  margin-top: 15px;
-  text-align: center;
-}
-h2 {
-  list-style: none;
-  color: #48484a;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 500;
-  margin-bottom: 30px;
-  text-align: center;
+#root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
 }
 
-h3 {
-  color: white;
-  font-weight: 300;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: -10px;
-  position: relative;
-  left: 11px;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-li {
-  list-style: none;
-  color: #48484a;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  margin-bottom: 0;
-  position: relative;
-  left: 50px;
-  text-align: center;
+main {
+  padding: 20px;
+  width: 100%;
 }
 
 ul {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
-h3:first-letter {
-  text-transform: capitalize;
-}
+footer {
+  padding-top: 16px;
 
-.footer {
   color: #48484a;
+  font-size: 11px;
+  text-align: center;
+}
+
+.list > * + * {
+  margin-top: 4px;
 }

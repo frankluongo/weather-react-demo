@@ -1,0 +1,14 @@
+.info-header > * + * {
+  margin-top: 16px;
+}
+
+.info-image {
+  height: 64px;
+  width: 64px;
+
+  object-fit: contain;
+}
+
+.info-list {
+  margin-left: auto;
+}

@@ -1,27 +1,33 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Weather from "./Weather";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import Weather from './components/Weather';
 
-import "./index.css";
+import './reset.css';
+import './typography.css';
+import './grid.css';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <Weather defaultCity="New York" />
-      <p className="footer">
+    <BrowserRouter>
+      <main>
+        <Weather defaultCity="New York" />
+      </main>
+      <footer>
         <a
           href="https://github.com/brennawilliamson/weather-react"
           target="_blank"
           rel="noopener noreferrer"
         >
           Open-source code
-        </a>{" "}
+        </a>{' '}
         by Brenna Williamson
-      </p>
-    </div>
+      </footer>
+    </BrowserRouter>
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);

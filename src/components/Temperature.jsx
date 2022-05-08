@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function WeatherTemperature(props) {
   return (
-    <div className="weatherTemperature">
+    <p className="temp">
       <strong>{Math.round(props.fahrenheit)}</strong>
       <span className="units">°F</span>
-    </div>
+    </p>
   );
 }
